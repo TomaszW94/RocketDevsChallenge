@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RocketDevsChallenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assets/RocketLogo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="Assets/RocketLogo.svg" alt="RocketLogo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">how it works</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+            <div class="menu-icon">
+                <img src="Assets/menu-icon.svg" alt="menu-icon">
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="intro">
+            <h1>Launch off Today<br>with Rocket<span>Devs</span></h1>
+            <p>A World-leading platorm in organic Social media growth. Get started today & Reach audiences who care.</p>
+        </div>
+        <button>Get Started</button>
+        <div class="bg_desktop">
+            <img src="Assets/SpaceBackground.svg" alt="SpaceBackground">
+        </div>
+        <div class="bg_mobile">
+            <img src="Assets/Mobile-Background.svg" alt="SpaceBackground">
+        </div>
+    </section>
+    <script>
+        const menu_btn = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav ul');
+        menu_btn.addEventListener('click', function () {
+            nav.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
